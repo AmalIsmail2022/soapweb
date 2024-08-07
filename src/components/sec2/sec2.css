@@ -1,0 +1,95 @@
+.sec2{
+    background-image: url(../../images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+}
+.sec2-text{
+    flex-direction: column;
+    justify-content: start;
+    width: 50% !important;
+    background-color: #f06556b4;
+    height: 80vh;
+    padding: 80px;
+
+}
+        .sec2-text-hide {
+            display: none;
+        }
+.sec2-text h1{
+transition: .5s ease;
+color: var(--bgheader);
+}
+.sec2-text:hover h1 {
+    letter-spacing: 1px;
+
+}
+.sec2-text p{
+    margin-top: 50px;
+    color: var(--sec2p);
+}
+    .sec2-null{
+    width: 50% !important;
+}
+@media (max-width: 1200px) {
+    .sec2-text h1 {
+        font-size: 30px;
+    }
+        .sec2-text p {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+}
+@media (max-width: 992px) {
+.sec2-text {
+        padding:50px;
+    }
+}
+@media (max-width: 768px) {
+    .sec2-text h1 {
+            font-size: 25px;
+        }
+                        .sec2-text p {
+                            font-size: 12px;
+                        }
+                                                         .sec2-text {
+                                                             padding: 40px;
+                                                         }
+}
+@media (max-width: 576px) {
+    .sec2-texte h1 {
+            font-size: 20px;
+        }
+    
+    .sec2-text p {
+        font-size: 11px;
+        margin-top: 25px;
+    }
+    .sec2-text {
+        padding: 30px;
+    }
+ 
+
+}
+@media (max-width: 490px) {
+        .sec2-texte h1 {
+                font-size: 16px;
+            }
+        
+            .sec2-text p {
+                font-size: 11px;
+                margin-top: 20px;
+            }
+        
+            .sec2-text {
+                padding: 24px;
+            }
+}
+@media (max-width: 470px) {
+    .sec2-text{
+        display: none;
+    }
+
+}

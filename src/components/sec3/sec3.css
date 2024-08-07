@@ -1,0 +1,130 @@
+.sec3{
+    flex-direction: column;
+    background-color: var(--secondary);
+    background-size: cover !important;
+    width: 100% !important;
+    /* height: 687px; */
+    padding-bottom: 60px;
+}
+.sec3 h1.container{
+color: #66cdbb;
+transition: .5s ease;
+}
+.sec3 h1.container:hover {
+color: #555;
+letter-spacing: 1px;
+}
+.sec3-tx1{
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.sec3-h1{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    height:150px;
+    padding: 30px;
+    min-width: 150px;
+    background-color: #555;
+    color: white;
+}
+.sec3-tx2{
+margin-left: 50px;
+margin-top: 20px;
+}
+.sec3-tx2 h4{
+    margin-bottom: 20px;
+    color: #555;
+}
+.sec3-tx2 p {
+        color: var(--hssubtitlep);
+            margin-bottom: 10px;
+}
+.sec3-btn{
+    float: right;
+    margin-top: 0px !important;
+    background-color: #66cdbb;
+}
+
+@media (max-width: 1200px) {
+    .sec3-tx2 p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 800px) {
+.sec3-tx1{
+    flex-wrap: wrap;
+    justify-content: center;
+   text-align: center;
+
+}
+.sec3-tx2 {
+margin-left: 0;
+}
+.sec3 h1{
+text-align: center;
+}
+.sec3-btn {
+    float: none;
+}
+.sec3 p {
+margin-bottom: 30px;
+}
+}
+@media (max-width: 768px) {
+.sec3 h1.container {
+font-size: 25px;
+}
+.sec3-h1 {
+height: 100px;
+min-width: 100px;
+padding: 20px;
+}
+.sec3-h1 h1{
+font-size: 25px !important;
+}
+.sec3-tx2 p{
+font-size: 12px;
+max-width: 80%;
+margin: auto;
+margin-bottom: 20px;
+ }
+.sec3-tx1 {
+
+    margin-top: 30px;
+}
+}
+
+@media (max-width: 576px) {
+    .sec3{
+        padding-bottom: 20px;
+    }
+.sec3 h1.container {
+        font-size: 20px;
+        margin-top: 40px !important;
+    }
+        .sec3-tx2 p {
+            font-size: 11px;
+        }
+.sec3-tx2 h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.sec3-h1 {
+    height: 80px;
+    min-width: 80px;
+    padding: 15px;
+}
+.sec3-h1 h1 {
+    font-size: 18px !important;
+}
+.more_btn {
+    padding: 5px 15px;
+    font: 14px / 20px "Merienda One", Arial, sans-serif;
+    width: 70px;
+    height: 35px;
+}
+}

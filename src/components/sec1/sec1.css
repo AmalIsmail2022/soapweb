@@ -1,0 +1,278 @@
+
+
+.card-container{
+    justify-content: center;
+    gap: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+}
+.card{
+    flex-direction: column;
+    width: 270px;
+    text-align: center;
+}
+.card .image{
+position: relative;
+border-radius: 50%;
+overflow: hidden;
+cursor: pointer;
+}
+.card .image img{
+border-radius: 50%;
+max-width: 100%;
+transition: .5s ease;
+cursor: pointer;
+}
+.card .image:hover img {
+transform: scale(1.2);
+}
+.card .image::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #8ec63f67;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    z-index: 2;
+}
+.bf2::before{
+        background-color: #66cdbc5f !important;
+}
+.bf3::before {
+    background-color: #f065564d !important;
+}
+.bf4::before {
+    background-color: #ddbd306b !important;
+}
+.card .image:hover:before {
+    animation: flashing .7s;
+}
+
+.card .image:hover .overlay:after {
+    opacity: 1;
+}
+.card h2{
+    color: var(--hstitle);
+    font-size: 25px;
+    margin-top: 30px;
+    transition: .5s ease;
+}
+.card h2:hover {
+color: var(--hssubtitlehover);
+}
+.card h4 {
+    color: var(--hssubtitle);
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+    transition: .5s ease;
+}
+.card h4:hover {
+color: var(--hssubtitlehover);
+}
+.card p {
+    color: var(--hssubtitlep);
+    font-size: 13px;
+    margin-top: 30px;
+}
+.pro-img{
+    width: 500px;
+    border: 5px solid var(--img) !important;
+}
+.more_btn {
+    margin-top: 40px !important;
+    padding: 11px 23px;
+    background:  #8dc63f;
+    color: #fff;
+    font: 16px / 20px "Merienda One", Arial, sans-serif;
+    border-radius: 3px;
+    width: 86px;
+    height: 42px;
+    border: none;
+    transition: .5s ease;
+    cursor: pointer;
+}
+ .sec-btn{
+    margin: auto auto;
+}
+.more_btn:hover {
+    background: #555 !important;
+    color: #fff;
+}
+.bg2 {
+    background: #66cdbb !important;
+}
+.bg3 {
+    background: #f06656 !important;
+}
+.bg4 {
+    background: #ddbd30 !important;
+}
+@keyframes flashing {
+
+    0%,
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 200%;
+        height: 200%;
+    }
+}
+
+.fixed {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(2.5px);
+    background-color: rgba(40, 40, 48, 0.633) !important;
+    z-index: 8;
+}
+.fixed img{
+   margin-inline: auto;
+   margin-top: 50px;
+   transition: .5s ease;
+   animation: mymove 2.8s 1;
+}
+.icon-close-solid {
+    position: absolute;
+    font-size: 20px;
+    color: var(--img);
+    z-index: 20;
+    margin-left: -30px;
+    margin-top: 54px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease;
+    animation: mymove1 1.6s 1;
+}
+
+
+.icon-close-solid:hover {
+    font-size: 20px;
+    rotate: 280deg;
+    transform: scale(1.1);
+}
+@keyframes mymove {
+    0% {
+        scale: 0;
+    }
+
+    60% {
+        scale: 1.1;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+@keyframes mymove1 {
+    0% {
+        scale: 0;
+    }
+
+    60% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+@media (max-width: 1300px){
+    .card-container {
+        flex-wrap: wrap;
+    }
+    .card h2 {
+    font-size: 20px;
+        margin-top: 20px;
+    }
+    .card p {
+        font-size: 12px;
+                margin-top: 20px;
+    }
+    .card h4 {
+            font-size: 15px;
+                    margin-top: 20px;
+    }
+        .more_btn {
+                            margin-top: 30px !important;
+        }
+}
+@media (max-width: 1200px) {
+    .card .image img {
+  
+    }
+        .card .image:hover img {
+            transform: scale(1.1);
+        }
+}
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+    .card{
+                        border-bottom: 1px solid #7878783c;
+    }
+        .card-container {
+            gap: 30px;
+        }
+        .card h2 {
+                font-size: 18px;
+                margin-top: 15px;
+            }
+        
+            .card p {
+                font-size: 12px;
+                margin-top: 15px;
+            }
+        
+            .card h4 {
+                font-size: 14px;
+                margin-top: 18px;
+            }
+        
+            .more_btn {
+                margin-top: 20px !important;
+                    margin-bottom: 20px !important;
+            }
+}
+@media (max-width: 576px) {
+    .card-container {
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+    .card .image {
+        width: 200px;
+        margin: auto;
+    }
+    .card h2 {
+        font-size: 16px;
+
+    }
+    .card h4 {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .card p {
+        font-size: 11px;
+    }
+    .fixed img {
+        width: 300px !important;
+    }
+    .icon-close-solid {
+        font-size: 15px;
+        margin-left: -25px;
+        margin-top: 55px;
+    }
+    .icon-close-solid:hover {
+        font-size: 15px;
+        rotate: 280deg;
+        transform: scale(1.1);
+    }
+}
